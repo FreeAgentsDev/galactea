@@ -13,7 +13,6 @@
 6. [Propuesta Técnica](#propuesta-técnica)
 7. [Plan de Implementación](#plan-de-implementación)
 8. [Métricas y KPIs](#métricas-y-kpis)
-9. [Inversión y Retorno](#inversión-y-retorno)
 
 ---
 
@@ -441,59 +440,11 @@
 
 ---
 
-## 💰 Inversión y Retorno
-
-### Inversión Inicial (6 meses)
-
-#### Desarrollo y Diseño
-- Sitio web + E-commerce: $3,000 - $5,000 USD
-- Diseño y branding: $1,000 - $2,000 USD
-- Fotografía profesional: $500 - $1,000 USD
-- **Subtotal**: $4,500 - $8,000 USD
-
-#### Marketing Digital
-- Estrategia y contenido (6 meses): $2,000 - $3,000 USD
-- Publicidad (presupuesto mensual): $500 - $1,000 USD/mes
-- Herramientas y software: $200 - $300 USD/mes
-- **Subtotal**: $5,200 - $9,300 USD
-
-#### Operaciones
-- Integración de pagos y envíos: $500 - $1,000 USD
-- Configuración inicial: $500 - $1,000 USD
-- **Subtotal**: $1,000 - $2,000 USD
-
-**TOTAL ESTIMADO (6 meses)**: $10,700 - $19,300 USD
-
-### Retorno Esperado (ROI)
-
-#### Escenario Conservador
-- **Aumento de ventas**: 30-50% en 6 meses
-- **Nuevos clientes online**: 100-200 clientes/mes
-- **Ticket promedio**: $20-30 USD
-- **Ingresos adicionales**: $2,000 - $6,000 USD/mes
-- **ROI en 6 meses**: 60-120%
-
-#### Escenario Optimista
-- **Aumento de ventas**: 80-120% en 6 meses
-- **Nuevos clientes online**: 300-500 clientes/mes
-- **Ticket promedio**: $25-35 USD
-- **Ingresos adicionales**: $7,500 - $17,500 USD/mes
-- **ROI en 6 meses**: 200-400%
-
-### Beneficios Intangibles
-- **Branding fortalecido**: Mayor reconocimiento de marca
-- **Credibilidad**: Presencia profesional online
-- **Escalabilidad**: Base para crecimiento futuro
-- **Datos**: Insights valiosos sobre clientes y mercado
-- **Competitividad**: Ventaja sobre competidores sin presencia digital
-
----
-
 ## 🎯 Próximos Pasos
 
 ### Inmediatos (Esta Semana)
 1. ✅ Revisión y aprobación de esta propuesta
-2. 📋 Definición de alcance y presupuesto final
+2. 📋 Definición de alcance
 3. 📅 Calendarización de reuniones de trabajo
 4. 📸 Sesión de fotografía de productos
 
@@ -537,7 +488,6 @@
 
 Esta propuesta es el inicio de una conversación. Estamos abiertos a:
 - Ajustar el alcance según necesidades específicas
-- Modificar el presupuesto según posibilidades
 - Priorizar fases según urgencia
 - Personalizar soluciones para Galactea
 
