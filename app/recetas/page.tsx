@@ -85,12 +85,16 @@ export default function RecetasPage() {
           {recipes.map((recipe) => (
             <div
               key={recipe.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-[var(--galactea-lavender)]"
             >
-              <div className="aspect-video w-full bg-gradient-to-br from-green-100 to-purple-100 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-6xl">
-                  🍽️
-                </div>
+              <div className="aspect-video w-full relative overflow-hidden bg-gray-100">
+                <Image
+                  src={recipe.image}
+                  alt={recipe.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
               
               <div className="p-6">

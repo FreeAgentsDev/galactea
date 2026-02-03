@@ -19,7 +19,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="group relative bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="group relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-[var(--galactea-lavender)]">
       <Link href={`/productos/${product.slug}`}>
         <div className="aspect-square w-full overflow-hidden bg-gray-100">
           <Image
@@ -47,7 +47,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       
       <div className="p-4">
         <Link href={`/productos/${product.slug}`}>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-[var(--galactea-primary)] transition-colors">
             {product.name}
           </h3>
           <p className="text-sm text-gray-600 mb-3 line-clamp-2">
@@ -59,7 +59,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <div className="flex items-center space-x-2">
             {product.originalPrice ? (
               <>
-                <span className="text-2xl font-bold text-green-600">
+                <span className="text-2xl font-bold text-[var(--galactea-primary)]">
                   ${product.price.toLocaleString('es-CO')}
                 </span>
                 <span className="text-sm text-gray-500 line-through">
@@ -67,7 +67,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </span>
               </>
             ) : (
-              <span className="text-2xl font-bold text-gray-900">
+              <span className="text-2xl font-bold text-[var(--galactea-primary)]">
                 ${product.price.toLocaleString('es-CO')}
               </span>
             )}
@@ -79,7 +79,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             {product.tags.slice(0, 2).map((tag) => (
               <span
                 key={tag}
-                className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full"
+                className="text-xs bg-[var(--galactea-lavender)] text-[var(--galactea-primary)] px-2 py-0.5 rounded-full"
               >
                 {tag}
               </span>
@@ -90,7 +90,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <button
           onClick={handleAddToCart}
           disabled={!product.inStock}
-          className="mt-4 w-full bg-gradient-to-r from-green-500 to-purple-600 text-white py-2 px-4 rounded-lg font-medium hover:from-green-600 hover:to-purple-700 transition-all duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          className="mt-4 w-full bg-[var(--galactea-primary)] text-white py-2 px-4 rounded-xl font-medium hover:bg-[var(--galactea-mid)] transition-all duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
         >
           <ShoppingCart className="h-4 w-4" />
           <span>Agregar al carrito</span>

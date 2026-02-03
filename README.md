@@ -1,6 +1,19 @@
 # 🥛 Galáctea Factory - Sitio Web E-commerce
 
-Sitio web profesional con e-commerce para Galáctea Factory, fábrica artesanal de yogurt y alimentos funcionales.
+Sitio web profesional con e-commerce y panel de administración para Galáctea Factory, fábrica artesanal de yogurt y alimentos funcionales.
+
+> **Guía completa del sistema y tour:** en la raíz del repositorio ver [README.md](../README.md) para el tour paso a paso, diseño basado en el logo e instalación de todo el proyecto Galactea.
+
+## 🎨 Diseño (logo y paleta)
+
+El diseño de la web y del panel admin está basado en el **logo de Galactea** (tortuga marina con estrellas sobre fondo morado):
+
+- **Morado profundo** (`--galactea-deep`): header, footer, hero, CTA y sidebar del admin.
+- **Morado principal** (`--galactea-primary`): botones, enlaces y precios destacados.
+- **Lavanda** (`--galactea-lavender`): fondos suaves y texto sobre morado.
+- **Acento estrellas** (`--galactea-star`): badge del carrito y detalles “galácticos”.
+
+Variables en `app/globals.css`. Bordes redondeados suaves (`rounded-xl`, `rounded-2xl`) en toda la interfaz.
 
 ## 🚀 Características
 
@@ -71,11 +84,14 @@ galactea-website/
 
 ## 🎨 Personalización
 
-### Colores de la Marca
+### Colores de la Marca (basados en el logo)
 
-Los colores principales están definidos en `app/globals.css`:
-- **Verde**: `#22c55e` (primary-green)
-- **Morado**: `#a855f7` (primary-purple)
+Los colores están definidos en `app/globals.css` con variables CSS:
+- **Morado profundo**: `--galactea-deep` (#4A2563) — header, footer, CTA
+- **Morado principal**: `--galactea-primary` (#5B2C6F) — botones, enlaces
+- **Morado medio**: `--galactea-mid` (#6A3A9F) — hovers
+- **Lavanda**: `--galactea-lavender` (#E8DAEF) — fondos suaves
+- **Estrellas**: `--galactea-star` (#F4D03F) — badges y acentos
 
 ### Productos
 

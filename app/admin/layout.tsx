@@ -57,22 +57,24 @@ export default function AdminLayout({
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Sidebar */}
-      <aside className="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white z-40">
+    <div className="min-h-screen bg-[var(--galactea-lavender)]/30">
+      {/* Sidebar — Morado profundo como el logo */}
+      <aside className="fixed left-0 top-0 h-full w-64 bg-[var(--galactea-deep)] text-white z-40">
         <div className="flex flex-col h-full">
-          <div className="p-6 border-b border-gray-800">
-            <Link href="/admin/dashboard" className="flex items-center space-x-3">
-              <Image
-                src="/logo.png"
-                alt="Galáctea Factory Logo"
-                width={40}
-                height={40}
-                className="h-10 w-10 object-contain"
-              />
+          <div className="p-6 border-b border-white/20">
+            <Link href="/admin/dashboard" className="flex items-center gap-3">
+              <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/20">
+                <Image
+                  src="/logo.png"
+                  alt="Galáctea Factory"
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 object-contain"
+                />
+              </span>
               <div>
                 <div className="font-bold text-lg">Galáctea</div>
-                <div className="text-xs text-gray-400">Admin Panel</div>
+                <div className="text-xs text-[var(--galactea-lavender)]">Admin Panel</div>
               </div>
             </Link>
           </div>
@@ -85,10 +87,10 @@ export default function AdminLayout({
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition-colors ${
                     isActive
-                      ? 'bg-purple-600 text-white'
-                      : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                      ? 'bg-[var(--galactea-mid)] text-white'
+                      : 'text-white/80 hover:bg-white/10 hover:text-white'
                   }`}
                 >
                   <Icon className="h-5 w-5" />
@@ -98,10 +100,10 @@ export default function AdminLayout({
             })}
           </nav>
 
-          <div className="p-4 border-t border-gray-800">
+          <div className="p-4 border-t border-white/20">
             <button
               onClick={handleLogout}
-              className="w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
+              className="w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-white/80 hover:bg-white/10 hover:text-white transition-colors"
             >
               <LogOut className="h-5 w-5" />
               <span>Cerrar Sesión</span>
@@ -113,7 +115,7 @@ export default function AdminLayout({
       {/* Mobile Menu Button */}
       <button
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="fixed top-4 left-4 z-50 lg:hidden p-2 bg-gray-900 text-white rounded-lg"
+        className="fixed top-4 left-4 z-50 lg:hidden p-2 bg-[var(--galactea-deep)] text-white rounded-xl"
       >
         {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
@@ -122,20 +124,22 @@ export default function AdminLayout({
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 lg:hidden">
           <div className="fixed inset-0 bg-black bg-opacity-50" onClick={() => setMobileMenuOpen(false)} />
-          <aside className="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white">
+          <aside className="fixed left-0 top-0 h-full w-64 bg-[var(--galactea-deep)] text-white">
             <div className="flex flex-col h-full">
-              <div className="p-6 border-b border-gray-800">
-                <Link href="/admin/dashboard" className="flex items-center space-x-3">
-                  <Image
-                    src="/logo.png"
-                    alt="Galáctea Factory Logo"
-                    width={40}
-                    height={40}
-                    className="h-10 w-10 object-contain"
-                  />
+              <div className="p-6 border-b border-white/20">
+                <Link href="/admin/dashboard" className="flex items-center gap-3">
+                  <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/20">
+                    <Image
+                      src="/logo.png"
+                      alt="Galáctea Factory"
+                      width={28}
+                      height={28}
+                      className="h-7 w-7 object-contain"
+                    />
+                  </span>
                   <div>
                     <div className="font-bold text-lg">Galáctea</div>
-                    <div className="text-xs text-gray-400">Admin Panel</div>
+                    <div className="text-xs text-[var(--galactea-lavender)]">Admin Panel</div>
                   </div>
                 </Link>
               </div>
@@ -149,10 +153,10 @@ export default function AdminLayout({
                       key={item.name}
                       href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                      className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition-colors ${
                         isActive
-                          ? 'bg-purple-600 text-white'
-                          : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                          ? 'bg-[var(--galactea-mid)] text-white'
+                          : 'text-white/80 hover:bg-white/10 hover:text-white'
                       }`}
                     >
                       <Icon className="h-5 w-5" />
@@ -162,10 +166,10 @@ export default function AdminLayout({
                 })}
               </nav>
 
-              <div className="p-4 border-t border-gray-800">
+              <div className="p-4 border-t border-white/20">
                 <button
                   onClick={handleLogout}
-                  className="w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
+                  className="w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-white/80 hover:bg-white/10 hover:text-white transition-colors"
                 >
                   <LogOut className="h-5 w-5" />
                   <span>Cerrar Sesión</span>

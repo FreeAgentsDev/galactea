@@ -35,18 +35,20 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-purple-50 to-white">
+    <div className="min-h-screen flex items-center justify-center bg-[var(--galactea-deep)]">
       <div className="max-w-md w-full mx-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 border border-[var(--galactea-lavender)]">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <Image
-                src="/logo.png"
-                alt="Galáctea Factory Logo"
-                width={80}
-                height={80}
-                className="h-20 w-20 object-contain"
-              />
+              <span className="relative flex h-24 w-24 items-center justify-center rounded-2xl bg-[var(--galactea-lavender)] ring-2 ring-[var(--galactea-primary)]">
+                <Image
+                  src="/logo.png"
+                  alt="Galáctea Factory"
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 object-contain"
+                />
+              </span>
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
               Panel de Administración
@@ -58,7 +60,7 @@ export default function AdminLogin() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {error && (
-              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg flex items-center space-x-2">
+              <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl flex items-center space-x-2">
                 <AlertCircle className="h-5 w-5" />
                 <span>{error}</span>
               </div>
@@ -74,7 +76,7 @@ export default function AdminLogin() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[var(--galactea-primary)] focus:border-transparent"
                 placeholder="admin"
               />
             </div>
@@ -89,7 +91,7 @@ export default function AdminLogin() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[var(--galactea-primary)] focus:border-transparent"
                 placeholder="••••••••"
               />
             </div>
@@ -97,7 +99,7 @@ export default function AdminLogin() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-3 px-4 bg-gradient-to-r from-green-500 to-purple-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-purple-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg"
+              className="w-full py-3 px-4 bg-[var(--galactea-primary)] text-white font-semibold rounded-xl hover:bg-[var(--galactea-mid)] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 shadow-lg"
             >
               {isLoading ? (
                 <>
